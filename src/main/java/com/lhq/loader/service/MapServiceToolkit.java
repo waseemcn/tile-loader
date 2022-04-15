@@ -143,6 +143,7 @@ public class MapServiceToolkit {
                             fileName = sb.append(zoom).append("_").append(x).append("_").append(y).append(".png").toString();
                         }
                         url = baseUrl.replace("{x}", String.valueOf(x)).replace("{y}", String.valueOf(y)).replace("{z}", String.valueOf(zoom));
+                        System.out.println(url);
                         try {
                             tileQueue.put(new DownFile(url, fileName, downloadParamVO.getType(), downloadParamVO.getId()));
                         } catch (InterruptedException e) {

@@ -39,4 +39,12 @@ public class LngLat implements Serializable {
 	public void setLat(double lat) {
 		this.lat = lat;
 	}
+
+	@Override
+	public String toString() {
+		return "LngLat{" +
+				"lng=" + lng +
+				", lat=" + lat +
+				'}';
+	}
 }

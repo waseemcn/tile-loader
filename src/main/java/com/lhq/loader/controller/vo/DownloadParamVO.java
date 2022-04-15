@@ -1,6 +1,7 @@
 package com.lhq.loader.controller.vo;
 
 import java.io.Serializable;
+import java.util.Arrays;
 
 import com.lhq.loader.bean.LngLat;
 
@@ -68,4 +69,15 @@ public class DownloadParamVO implements Serializable {
 		this.southeast = southeast;
 	}
 
+	@Override
+	public String toString() {
+		return "DownloadParamVO{" +
+				"id='" + id + '\'' +
+				", type='" + type + '\'' +
+				", path='" + path + '\'' +
+				", zooms=" + Arrays.toString(zooms) +
+				", northwest=" + northwest +
+				", southeast=" + southeast +
+				'}';
+	}
 }

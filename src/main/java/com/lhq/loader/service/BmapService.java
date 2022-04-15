@@ -16,7 +16,7 @@ import com.lhq.loader.controller.vo.DownloadParamVO;
  */
 @Service("bmapService")
 public class BmapService implements IMapService {
-    @Value("${config.baseUrl.bmap}")
+    @Value("${config.baseUrl.bmapapi}")
     private String baseUrl;
 
     /**
